@@ -38,10 +38,10 @@ function addressSearch() {
 
     var show_local   = false;
     var show_county  = false;
-    var show_state   = false;
+    var show_state   = true;
     var show_federal = false;
 
-    var results_level_set = [];
+ /*   var results_level_set = [];
     // set levels from checkboxes
     if ($('#show_local_results').is(':checked')) {
         show_local = true;
@@ -60,6 +60,7 @@ function addressSearch() {
         results_level_set.push('federal');
     }
 
+*/
     $.address.parameter('results_level', results_level_set);
 
     // console.log('doin search')
