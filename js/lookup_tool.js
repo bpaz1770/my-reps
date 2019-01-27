@@ -73,6 +73,10 @@ function addressSearch() {
     var params = {
         'key': API_KEY,
         'address': address
+        'roles': [
+        "legislatorLowerBody",
+        "legislatorUpperBody"
+      ]
     }
     $.when($.getJSON(INFO_API, params)).then(function(data){
         var divisions = data['divisions'];
