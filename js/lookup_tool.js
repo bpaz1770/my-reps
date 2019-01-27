@@ -69,6 +69,7 @@ function addressSearch() {
     // console.log('federal: ' + show_federal)
     var address = $('#address').val();
     $.address.parameter('address', encodeURIComponent(address));
+    $.roles.parameter('roles', encodeURIComponent(roles));
 
     var params = {
         'key': API_KEY,
