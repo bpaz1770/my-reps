@@ -329,13 +329,13 @@ layout: default
       
       // set levels of government checkboxes
       if (results_level.indexOf("local") >= 0)
-        $('#show_local_results').prop('checked', true);
+        $('#show_local_results').prop('checked', false);
       if (results_level.indexOf("county")  >= 0)
-        $('#show_county_results').prop('checked', true);
+        $('#show_county_results').prop('checked', false);
       if (results_level.indexOf("state")  >= 0)
         $('#show_state_results').prop('checked', true);
       if (results_level.indexOf("federal")  >= 0)
-        $('#show_federal_results').prop('checked', true);
+        $('#show_federal_results').prop('checked', false);
 
       $("#results-nav a").click(function(e) {
         e.preventDefault();
